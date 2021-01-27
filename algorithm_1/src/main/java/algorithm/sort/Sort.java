@@ -1,6 +1,4 @@
-package sort;
-
-import java.util.Arrays;
+package algorithm.sort;
 
 public class Sort {
     public static void main(String[] args) {

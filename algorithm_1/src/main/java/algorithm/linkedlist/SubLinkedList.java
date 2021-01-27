@@ -1,4 +1,4 @@
-package problems;
+package algorithm.linkedlist;
 
 import datastructure.linkedlist.ReverseLinkedList;
 

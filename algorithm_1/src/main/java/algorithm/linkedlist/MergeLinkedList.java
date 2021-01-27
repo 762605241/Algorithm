@@ -1,4 +1,4 @@
-package problems;
+package algorithm.linkedlist;
 
 public class MergeLinkedList {
     public static void main(String[] args) {
