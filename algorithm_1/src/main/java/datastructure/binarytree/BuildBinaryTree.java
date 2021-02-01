@@ -16,7 +16,7 @@ public class BuildBinaryTree {
 //        Node node = buildBinaryTreeByMidAndLast(mid, last);
         IteratorBinaryTree.pre(node);
         System.out.println();
-        IteratorBinaryTree.mid(node);
+        IteratorBinaryTree.mid(node);   
         System.out.println();
         IteratorBinaryTree.last(node);
         System.out.println();
