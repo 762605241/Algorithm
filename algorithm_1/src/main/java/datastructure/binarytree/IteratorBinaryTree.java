@@ -196,15 +196,21 @@ public class IteratorBinaryTree {
         LinkedList<Node> queue = new LinkedList<>();
         queue.offer(head);
         Node node = null;
+        int size = 0;
         while (!queue.isEmpty()) {
-            node = queue.pop();
-            System.out.print(node.value + "\t");
-            if (node.left != null) {
-                queue.offer(node.left);
+            // 每次循环时，当前队列中就是当前层的所有节点，将当前层输出后，将其所有子树节点加入到队列中。
+            size = queue.size();
+            while (size-- > 0) {
+                node = queue.pop();
+                System.out.print(node.value + "\t");
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
             }
-            if (node.right != null) {
-                queue.offer(node.right);
-            }
+            System.out.println();
         }
     }
 
