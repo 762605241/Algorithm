@@ -106,7 +106,7 @@ public class Sort {
         merge(array, L, mid, R);
     }
 
-    private static void merge(int[] array, int L, int mid, int R) {
+    public static void merge(int[] array, int L, int mid, int R) {
         int[] temp = new int[R - L + 1];
         int i = 0;
         int p1 = L;
